@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "0865c787-afe0-4cf9-9d5c-de05246d55cf",
+		"name": "TestsLesson",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9999/api/v1/contacts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ed1cae5e-486b-4ac5-90c6-42e536391ead",
+						"exec": [
+							"pm.test(\"Numero de Datos\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.length).to.eql(7);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9999/api/v1/contacts"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
