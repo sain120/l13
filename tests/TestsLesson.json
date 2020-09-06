@@ -15,7 +15,7 @@
 						"exec": [
 							"pm.test(\"Numero de Datos\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.length).to.eql(4);\r",
+							"    pm.expect(jsonData.length).to.eql(7);\r",
 							"});"
 						],
 						"type": "text/javascript"
